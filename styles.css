@@ -1,0 +1,22 @@
+.mainBoard{
+    background-color: rgb(196, 196, 196);
+    width: 80vw;
+    height: 80vh;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+}
+
+.mainBoard > img {
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
