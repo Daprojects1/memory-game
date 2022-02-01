@@ -125,9 +125,9 @@ const check = ()=>{
          secondAtt.setAttribute("src","images/white.png")
         //  pushes the values into an array called finalCheck. Holds all matched arrays. Helps to see if completed game.
          finalCheck.push(firstAtt,secondAtt)
-        //  attempted to splice out the selected values from the mainArray- !! still working on this!!
-         cardsARR.splice(value[0],0);
-         cardsARR.splice(value[1],0);
+        //  when matched, event listener is removed so it doesnt flip again.
+        firstAtt.removeEventListener("click", flip)
+        secondAtt.removeEventListener("click",flip)
         //  allows us to display the score 
          scorenum++
          scoreH3.innerText = "Your Score Is" + ":" +" "+scorenum;
